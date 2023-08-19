@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-image: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover
+    ;
+}
 .title1 {
     text-align: center;
     padding: 40px;
+    font-family: 'Permanent Marker';
+    font-size: 4em;
 }
 
 ul {
@@ -13,5 +24,9 @@ ul {
 }
 
 li {
+    list-style: none;
+    font-family: "permanent marker";
+    font-size: 2em;
     padding: 20px;
+    margin: 0 7em;
 }
