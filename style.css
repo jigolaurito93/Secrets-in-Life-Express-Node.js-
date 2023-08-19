@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title1 {
+    text-align: center;
+    padding: 40px;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    padding: 20px;
+}
