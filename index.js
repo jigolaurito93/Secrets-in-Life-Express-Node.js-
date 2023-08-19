@@ -12,10 +12,20 @@ const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Load index.html when get request is successful
+// Load index.html when GET request is successful
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html')
 });
+
+// Use routehandler POST request to check if the entered password is correct
+// If correct, reroute to the secret.html page
+app.post('/check', (req, res) => {
+    if (req.body['password'] == "ILoveProgramming"){
+        res.sendFile(__dirname + '/public/secret.html');
+    } else {
+        res.sendFile(__dirname + '/public/index.html')
+    }  
+})
 
 
 app.listen(port, () => {
