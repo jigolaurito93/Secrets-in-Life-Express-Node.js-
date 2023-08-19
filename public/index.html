@@ -3,14 +3,52 @@
 
 <head>
   <title>Secrets</title>
+  <link rel="stylesheet" href="/3.5 Secrets Project/public/style.css">
 </head>
 
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .title2 {
+    font-family: 'Permanent Marker';
+    font-size: 8em;
+    margin-top: 2em;
+  }
+
+  form{
+    font-size: 1.5em;
+
+  }
+
+  #password{
+    height: 30px;
+    border-radius: 4%;
+  }
+
+
+  .btn{
+    height: 30px;
+    width: 70px;
+    border-radius: .25em;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+
+</style>
+
 <body>
-  <h1>Secrets</h1>
+  <h1 class="title2" >Secrets</h1>
   <form action="/check" method="POST">
     <label for="password">Password:</label>
     <input type="text" id="password" name="password" required>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" class="btn">
   </form>
 </body>
 
